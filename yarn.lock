@@ -2528,20 +2528,7 @@
     "locate-path" "^5.0.0"
     "path-exists" "^4.0.0"
 
-"flowbite-datepicker@^1.2.2":
-  "integrity" "sha512-qOKDVtwkiOa0RrhD3sRtT45H8efAtyLiswuFIAV0UBhWSRYonzL0g1gAZwHiRRKtSmbET/8RQpQXlSEmAgadkg=="
-  "resolved" "https://registry.npmjs.org/flowbite-datepicker/-/flowbite-datepicker-1.2.2.tgz"
-  "version" "1.2.2"
-  dependencies:
-    "flowbite" "^1.4.5"
 
-"flowbite@^1.4.5":
-  "integrity" "sha512-e2OHfndxTHtGMqcPqvqwg3gGLg57hmIDVgE/BazMDccgirQ0JEtirKnbZZ4WSOIEhNDgO9pJZuyC8rRlcMm6pQ=="
-  "resolved" "https://registry.npmjs.org/flowbite/-/flowbite-1.5.3.tgz"
-  "version" "1.5.3"
-  dependencies:
-    "@popperjs/core" "^2.9.3"
-    "mini-svg-data-uri" "^1.4.3"
 
 "follow-redirects@^1.0.0":
   "integrity" "sha512-yLAMQs+k0b2m7cVxpS1VKJVvoz7SS9Td1zss3XRwXj+ZDH00RJgnuLx7E44wx02kQLrdM3aOOy+FpzS7+8OizA=="
