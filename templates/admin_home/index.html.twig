@@ -1,0 +1,170 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello AdminHomeController!
+{% endblock %}
+
+{% block content %}
+
+
+	<div class="tabs flex justify-center object-top">
+		<a class="tab sm:tab-lg tab-bordered tab-active">Mission(s)</a>
+		<a class="tab sm:tab-lg tab-bordered ">Agent(s)</a>
+		<a class="tab sm:tab-lg tab-bordered">Cible(s)</a>
+		<a class="tab sm:tab-lg tab-bordered">Contact(s)</a>
+		<a class="tab sm:tab-lg tab-bordered">Planque(s)</a>
+		<a class="tab sm:tab-lg tab-bordered">Spécialité(s)</a>
+	</div>
+
+
+</div>
+
+<div class="flex justify-center mt-4 gap-2">
+
+	<button class="btn btn-xs btn-warning">Modifier</button>
+	<button class="btn btn-xs btn-success ">Accepter</button>
+	<button class="btn btn-xs btn-error">Supprimer</button>
+
+</div>
+
+<div class=" mb-24 ">
+
+	<div class="grid p-8 justify-items-center overflow-hidden grid-lines grid-cols-12 auto-rows-auto gap-2">
+
+		<div class="box row-start-1 row-span-1 col-start-2 col-span-3 ">
+
+			<select class="select select-bordered select-lg w-max max-w-xs ">
+				<option disabled selected>Missions</option>
+				<option>Large Apple</option>
+				<option>Large Orange</option>
+				<option>Large Tomato</option>
+			</select>
+
+		</div>
+
+		<div class="box row-start-1 row-span-1 col-start-9 col-span-3">
+
+			<select class="select select-bordered select-lg w-max max-w-xs">
+				<option disabled selected>Active</option>
+				<option>Echec</option>
+			</select>
+
+		</div>
+
+		<div class="box  row-start-2 row-span-1 col-start-5 col-span-4">
+
+			<input type="text" placeholder="ALPHA" class="input input-bordered w-full max-w-xs text-center"/>
+
+
+		</div>
+
+		<div class="box col-start-1 row-start-3 row-span-1 sm:col-start-2 col-span-3">
+
+			<label class="label ">
+				<span class="label-text ml-12 ">Début</span>
+			</label>
+			<input type="date" placeholder="Type here" class="input input-bordered input-sm w-[120px] sm:w-full max-w-xs"/>
+
+		</div>
+
+		<div class="box row-start-3 row-span-3 col-start-5 col-span-4 ">
+
+			<textarea class="textarea resize-none h-64 lg:w-96 placeholder=" Bio" ></textarea>
+				
+													 </div>
+				
+											<div class=" box row-start-3 row-span-1 col-start-10 sm:col-start-9 col-span-3">
+
+				<select class="select select-bordered select-sm w-full max-w-xs">
+					<option disabled selected>France</option>
+					<option>Small Apple</option>
+					<option>Small Orange</option>
+					<option>Small Tomato</option>
+				</select>
+
+			</div>
+
+			<div class="box row-start-4 row-span-1 col-start-1 sm:col-start-2 col-span-3">
+
+				<label class="label">
+					<span class="label-text ml-14">Fin</span>
+				</label>
+				<input type="date" placeholder="Type here" class="input input-bordered input-sm w-[120px] sm:w-full max-w-xs"/>
+
+			</div>
+
+			<div class="box row-start-6 row-span-1 col-start-2 col-span-3">
+
+				<select class="select select-bordered select-xs w-full max-w-xs">
+					<option disabled selected>Type</option>
+					<option>Tiny Apple</option>
+					<option>Tiny Orange</option>
+					<option>Tiny Tomato</option>
+				</select>
+
+			</div>
+			<div class="box row-start-6 row-span-1 col-start-5 col-span-4">
+
+				<select class="select select-bordered select-xs w-full max-w-xs">
+					<option disabled selected>Agent</option>
+					<option>Gregori de la maletta</option>
+					<option>Tiny Orange</option>
+					<option>Tiny Tomato</option>
+				</select>
+
+			</div>
+			<div class="box row-start-6 row-span-1 col-start-9 col-span-3">
+
+				<select class="select select-bordered select-xs w-full max-w-xs">
+					<option disabled selected>Contact</option>
+					<option>Tiny Apple</option>
+					<option>Tiny Orange</option>
+					<option>Tiny Tomato</option>
+				</select>
+
+			</div>
+
+			<div class="box row-start-7 row-span-1 col-start-2 col-span-3">
+
+				<select class="select select-bordered select-xs w-full max-w-xs">
+					<option disabled selected>Planque</option>
+					<option>Tiny Apple</option>
+					<option>Tiny Orange</option>
+					<option>Tiny Tomato</option>
+				</select>
+
+			</div>
+
+			<div class="box row-start-7 row-span-1 col-start-9 col-span-3">
+
+				<select class="select select-bordered select-xs w-full max-w-xs">
+					<option disabled selected>Cible</option>
+					<option>Tiny Apple</option>
+					<option>Tiny Orange</option>
+					<option>Tiny Tomato</option>
+				</select>
+
+			</div>
+		</div>
+
+		<div class="grid justify-items-center overflow-hidden grid-lines grid-cols-12 auto-rows-auto gap-2">
+			<div class="box pt-24 row-start-1 row-span-1 col-start-2 col-span-3 ">
+
+				<button class="btn btn-sm ">RETOUR</button>
+
+			</div>
+
+			<div class="box row-start-1 row-span-1 col-start-5 col-span-4">
+
+				<select class="select select-bordered select-xs w-full max-w-xs">
+					<option disabled selected>Spécialité</option>
+					<option>Tiny Apple</option>
+					<option>Tiny Orange</option>
+					<option>Tiny Tomato</option>
+				</select>
+
+			</div>
+		</div>
+
+	</div>
+
+{% endblock %}

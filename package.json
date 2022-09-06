@@ -21,6 +21,7 @@
     },
     "dependencies": {
         "daisyui": "^2.24.0",
+        "flowbite-datepicker": "^1.2.2",
         "tw-elements": "^1.0.0-alpha12"
     }
 }

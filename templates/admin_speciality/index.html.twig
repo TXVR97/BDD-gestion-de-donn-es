@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello AdminSpecialityController!{% endblock %}
+
+{% block content %}
+<div class="tabs flex justify-center object-top">
+		<a class="tab sm:tab-lg tab-bordered ">Mission(s)</a>
+		<a class="tab sm:tab-lg tab-bordered ">Agent(s)</a>
+		<a class="tab sm:tab-lg tab-bordered ">Cible(s)</a>
+		<a class="tab sm:tab-lg tab-bordered ">Contact(s)</a>
+		<a class="tab sm:tab-lg tab-bordered">Planque(s)</a>
+		<a class="tab sm:tab-lg tab-bordered tab-active">Spécialité(s)</a>
+	</div>
+
+
+	<div class="flex justify-center mt-4 gap-2">
+
+		<button class="btn btn-xs btn-warning">Modifier</button>
+		<button class="btn btn-xs btn-success ">Accepter</button>
+		<button class="btn btn-xs btn-error">Supprimer</button>
+
+	</div>
+
+    <div class="m-24  ">
+    
+                <div class="flex justify-center">
+				<select class="select select-bordered select-sm w-full max-w-xs flex justify-center">
+					<option disabled selected>Spécialités</option>
+					<option>Small Apple</option>
+					<option>Small Orange</option>
+					<option>Small Tomato</option>
+				</select>
+                </div>
+			
+</div>
+{% endblock %}
