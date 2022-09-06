@@ -11,9 +11,7 @@
         "tailwindcss": "^3.1.8",
         "webpack-notifier": "^1.15.0"
     },
-    "license": "UNLICENSED",
-    "private": true,
-    "scripts": {
+        "scripts": {
         "dev-server": "encore dev-server",
         "dev": "encore dev",
         "watch": "encore dev --watch",
