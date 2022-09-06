@@ -11,7 +11,7 @@ class LogController extends AbstractController
     #[Route('/log', name: 'app_log')]
     public function index(): Response
     {
-        return $this->render('log/index.html.twig', [
+        return $this->render('log/log.html.twig', [
             'controller_name' => 'LogController',
         ]);
     }
