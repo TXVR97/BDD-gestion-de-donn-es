@@ -3,15 +3,18 @@
 {% block title %}BDD-log
 {% endblock %}
 
+
+
+
 {% block content %}
 
 
 	<div class="hero min-h-screen bg-base-200">
 		<div class="hero-content flex-col lg:flex-row-reverse">
-			<div class="text-center lg:text-left">
+			<div class="text-center lg:text-left ">
 				<h1 class="text-5xl font-bold ">Bienvenue Administrateur</h1>
         
-				<div class=" flex justify-center lg:justify-center">
+				<div class=" flex justify-center lg:justify ">
 					<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 					<lottie-player src="https://assets9.lottiefiles.com/packages/lf20_6t5zdixs.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
 				</div>
@@ -21,17 +24,19 @@
 			<div class="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
 				<div class="card-body">
 					<div class="form-control">
-						<label class="label">
+						<label for="inputEmail" class="label">
 							<span class="label-text">Email</span>
 						</label>
-						<input type="text" placeholder="email" class="input input-bordered"/>
+						<input type="text" placeholder="email" value="{{ last_username }}" name="email" id="inputEmail" class="input input-bordered autocomplete="email" required autofocus"/>
 					</div>
 					<div class="form-control">
-						<label class="label">
+						<label for="inputPassword" class="label">
 							<span class="label-text">Mot de passe</span>
 						</label>
-						<input
-						type="text" placeholder="mot de passe" class="input input-bordered"/>
+						<input type="password" name="password" id="inputPassword" placeholder="mot de passe" class="input input-bordered" autocomplete="current-password" required/>
+						
+						<input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
+          
 
 					  {#<label class="label">
 					            <a href="#" class="label-text-alt link link-hover">Forgot password?</a>

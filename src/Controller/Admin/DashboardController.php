@@ -3,12 +3,13 @@
 namespace App\Controller\Admin;
 
 
+use App\Entity\Admin;
 use App\Entity\Cibles;
 use App\Entity\Skills;
 use App\Entity\Contacts;
 use App\Entity\Missions;
-use App\Entity\Planques;
 
+use App\Entity\Planques;
 use App\Entity\AgentsSpe;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -41,6 +42,7 @@ class DashboardController extends AbstractDashboardController
         yield MenuItem::linkToCrud('Cibles', ' fa fa-crosshairs', Cibles::class);
         yield MenuItem::linkToCrud('Contacts', ' fa fa-phone', Contacts::class);
         yield MenuItem::linkToCrud('Planques', ' fa fa-eye-slash', Planques::class);
+        
         
     }
 }
