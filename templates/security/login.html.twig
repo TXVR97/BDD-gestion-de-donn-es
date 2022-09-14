@@ -8,13 +8,25 @@
 
 {% block content %}
 
+<form method="post">
+
+{% if error %}
+        <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+    {% endif %}
+
+    {% if app.user %}
+        <div class="mb-3">
+            You are logged in as {{ app.user.userIdentifier }}, <a href="{{ path('app_logout') }}">Logout</a>
+        </div>
+    {% endif %}
+
 
 	<div class="hero min-h-screen bg-base-200">
 		<div class="hero-content flex-col lg:flex-row-reverse">
 			<div class="text-center lg:text-left ">
 				<h1 class="text-5xl font-bold ">Bienvenue Administrateur</h1>
         
-				<div class=" flex justify-center lg:justify ">
+				<div class=" flex justify-center lg:justify-start  ">
 					<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 					<lottie-player src="https://assets9.lottiefiles.com/packages/lf20_6t5zdixs.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
 				</div>
@@ -24,7 +36,7 @@
 			<div class="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
 				<div class="card-body">
 					<div class="form-control">
-						<label for="inputEmail" class="label">
+						<label for="inputEmail" class="label"> 
 							<span class="label-text">Email</span>
 						</label>
 						<input type="text" placeholder="email" value="{{ last_username }}" name="email" id="inputEmail" class="input input-bordered autocomplete="email" required autofocus"/>
@@ -44,12 +56,12 @@
 
 					</div>
 					<div class="form-control mt-6">
-						<button class="btn btn-primary">Login</button>
+						<button class="btn btn-primary" type="submit" >Login</button>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-
+</form>
 
 {% endblock %}

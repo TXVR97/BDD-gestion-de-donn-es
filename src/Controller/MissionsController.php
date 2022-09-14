@@ -6,13 +6,13 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-class LogController extends AbstractController
+class MissionsController extends AbstractController
 {
-    #[Route('/log', name: 'app_log')]
+    #[Route('/missions', name: 'app_missions')]
     public function index(): Response
     {
-        return $this->render('log/log.html.twig', [
-            'controller_name' => 'LogController',
+        return $this->render('missions/index.html.twig', [
+            'controller_name' => 'MissionsController',
         ]);
     }
 }

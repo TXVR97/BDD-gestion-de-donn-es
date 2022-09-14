@@ -61,6 +61,9 @@ class Missions
     #[ORM\JoinColumn(nullable: false)]
     private ?Skills $Skills = null;
 
+    #[ORM\Column(length: 255)]
+    private ?string $slug = null;
+
 
     public function getId(): ?int
     {
@@ -221,6 +224,18 @@ class Missions
     public function setSkills(?Skills $Skills): self
     {
         $this->Skills = $Skills;
+
+        return $this;
+    }
+
+    public function getSlug(): ?string
+    {
+        return $this->slug;
+    }
+
+    public function setSlug(string $slug): self
+    {
+        $this->slug = $slug;
 
         return $this;
     }

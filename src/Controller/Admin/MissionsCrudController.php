@@ -13,7 +13,7 @@ use EasyCorp\Bundle\EasyAdminBundle\Field\TextareaField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\TextEditorField;
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractCrudController;
 use EasyCorp\Bundle\EasyAdminBundle\Field\AssociationField;
-
+use EasyCorp\Bundle\EasyAdminBundle\Field\SlugField;
 
 class MissionsCrudController extends AbstractCrudController
 {
@@ -37,6 +37,7 @@ class MissionsCrudController extends AbstractCrudController
     {
         return [
             TextField::new('titre'),
+            SlugField::new('slug')->setTargetFieldName('titre'),
             TextareaField::new('description'),
             TextField::new('nom_de_code'),
             CountryField::new('pays'),
