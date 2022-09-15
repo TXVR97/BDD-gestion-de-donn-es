@@ -90,7 +90,7 @@
             "@auto-scripts"
         ],
 
-        "compile": ["php bin/console doctrine:migration:migrate"]
+        "compile": ["php bin/console doctrine:migrations:migrate"]
     },
     "conflict": {
         "symfony/symfony": "*"
