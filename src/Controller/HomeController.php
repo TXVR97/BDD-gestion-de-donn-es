@@ -22,7 +22,7 @@ class HomeController extends AbstractController
 
 
 
-    #[Route('/accueil', name: 'missions')]
+    #[Route('/', name: 'missions')]
     public function index(): Response
     {
 
