@@ -21,7 +21,7 @@ class AppFixtures extends Fixture
         
         $user = new User();
         $user->setEmail('leboss@secret.com')
-        ->setPlainPassword('lsdB1')
+        ->setPassword('$2y$13$z/B8OItXN1xeEbOVA4UTn.BbJc2K4oo.4g5FaY6QuNf/qp44qjz3W')
         ->setRoles(array('ROLE_ADMIN'))
         ->setNom('Don')
         ->setPrenom('Miguel');
