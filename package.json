@@ -18,10 +18,6 @@
         "watch": "encore dev --watch",
         "build": "encore production --progress"
     },
-    "engines": {
-        "node": "v13.11.*",
-        "npm": "6.14.*"
-    },
     "dependencies": {
         "@lottiefiles/lottie-interactivity": "^1.6.1",
         "daisyui": "^2.25.0"
