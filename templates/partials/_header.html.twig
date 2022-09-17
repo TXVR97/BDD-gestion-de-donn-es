@@ -13,9 +13,11 @@
         <div class="">
             You are logged in as {{ app.user.nom }}, <a href="{{ path('app_logout') }}">Déconnexion</a>
         </div>
+		{% else %}
+		<a href="{{path('app_login')}}"><button  class="btn btn-active btn-ghost" >Login</button> </a>	
     {% endif %}
 
-			<a href="{{path('app_login')}}"><button  class="btn btn-active btn-ghost" >Login</button> </a>
+			
 		</div>
 	</div>
 </div>
