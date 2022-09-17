@@ -9,6 +9,11 @@
 				<a href="{{path('missions')}}"><img class="w-max" src="{{ asset('images/logobdd.png')}}" alt="..."/></a>
 			</div> 
 
+			{% if app.user %}
+        <div class="">
+            You are logged in as {{ app.user.name }}, <a href="{{ path('app_logout') }}">Déconnexion</a>
+        </div>
+    {% endif %}
 
 			<a href="{{path('app_login')}}"><button  class="btn btn-active btn-ghost" >Login</button> </a>
 		</div>
